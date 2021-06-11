@@ -1,0 +1,11 @@
+<body>
+  <div class="container">
+    <div class="card card-primary">
+      <%= simple_form_for(@list) do |f| %>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+        <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,30 @@
+// Specific CSS for your home-page
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.callasforever-themovie.com/wp-content/uploads/2021/05/good-movies.jpg);
+}
+
+.banner h1 {
+  margin: 0px;
+  padding-top: 65px;
+  padding-bottom: 15px;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+.card-list {
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.card-list:hover {
+  background-color: lightblue;
+}

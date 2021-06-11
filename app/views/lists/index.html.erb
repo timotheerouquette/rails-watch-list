@@ -1,0 +1,24 @@
+<head>
+  <meta charset="UTF-8">
+  <title>My movies lists</title>
+</head>
+
+<body>
+  <div class="banner">
+    <div class="container">
+      <h1><strong>My movies lists 🍿</strong></h1>
+    </div>
+  </div>
+  <div class="container">
+    <ul>
+      <% @lists.each do |list| %>
+        <div class="card card-list">
+          <li><%= link_to list.name, list_path(list) %></li>
+        </div>
+      <% end %>
+    </ul>
+    <div class="navbar-lewagon">
+      <h4><%= link_to "Create new list", new_list_path %></h4>
+    </div>
+  </div>
+</body>
