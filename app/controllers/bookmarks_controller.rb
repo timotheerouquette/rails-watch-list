@@ -14,6 +14,10 @@ class BookmarksController < ApplicationController
     redirect_to list_path(@list)
   end
 
+  def delete
+
+  end
+
   private
 
   def bookmark_params

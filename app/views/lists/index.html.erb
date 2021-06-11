@@ -10,15 +10,25 @@
     </div>
   </div>
   <div class="container">
-    <ul>
+    <div class="row">
       <% @lists.each do |list| %>
-        <div class="card card-list">
-          <li><%= link_to list.name, list_path(list) %></li>
-        </div>
+
+          <%= link_to list_path(list) do %>
+          <div class="card card-list">
+            <strong><%= list.name %></strong>
+          </div>
+          <% end %>
       <% end %>
-    </ul>
-    <div class="navbar-lewagon">
-      <h4><%= link_to "Create new list", new_list_path %></h4>
     </div>
   </div>
+  <div class="container center">
+    <%= link_to new_list_path do %>
+      <div class="btn btn-primary">
+        Create new list
+      </div>
+    <% end %>
+  </div>
+  <footer class="bg-light text-center ">
+
+  </footer>
 </body>
